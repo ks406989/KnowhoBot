@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from firebase import firebase
 from process import check, searches, truecaller_search, fb_search, logreturn, log, eyecon_search
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from creds import cred
+from creds import creds
 
 firebase = firebase.FirebaseApplication(cred.DB_URL)
 app = Client(

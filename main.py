@@ -20,6 +20,22 @@ def start(client, message):
     check_status = check(message.chat.id)
 
 
+@app.on_message(filters.command(["botlist"]))
+
+def about(client, message):
+
+client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,text=f"[FilesToVideo](https://t.mefilestovideobot)\n [Miss Tina](https://t.meMiss_Tinabot)\n [Filter Bot](https://t.me/filter_mfmixwebbot)\n [Url Uploader](https://t.me/uploader_mfmixbot)\n [MfMixWeb Bot](https://t.me/mfmixweb_bot)\n [TG 2 YouTube](https://t.me/youtube99_bot)\n [Movie Request](https://t.me/request_moviebot)",disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Give Feedback", url="t.me/Kamlesh_Kirodewal")]]))
+
+
+
+@app.on_message(filters.command(["botlist"]))
+
+def about(client, message):
+
+client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,text=f"[FilesToVideo](https://t.mefilestovideobot)\n [Miss Tina](https://t.meMiss_Tinabot)\n [Filter Bot](https://t.me/filter_mfmixwebbot)\n [Url Uploader](https://t.me/uploader_mfmixbot)\n [MfMixWeb Bot](https://t.me/mfmixweb_bot)\n [TG 2 YouTube](https://t.me/youtube99_bot)\n [Movie Request](https://t.me/request_moviebot)",disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Give Feedback", url="t.me/Kamlesh_Kirodewal")]]))
+
+
+
 @app.on_message(filters.command(["about"]))
 def about(client, message):
     client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,text=f"`Channel`: [Movies](t.me/hindixstream)\n`Creator :` [Kamlesh Kirodewal](t.me/Kamlesh_Kirodewal)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Give Feedback", url="t.me/Kamlesh_Kirodewal")]]))
@@ -30,6 +46,7 @@ def stats(client, message):
     stat = client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,text="`Fetching details`")
     txt = logreturn()
     stat.edit(txt)
+    c
 
 
 @app.on_message(filters.text)

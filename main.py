@@ -5,7 +5,7 @@ from process import check, searches, truecaller_search, fb_search, logreturn, lo
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from creds import cred
 
-firebase = firebase.FirebaseApplication(cred.ruecalerbot.firebaseio.com/)
+firebase = firebase.FirebaseApplication(cred.https://truecalerbot.firebaseio.com/)
 app = Client(
     "KNOW-WHO-BOT",
     api_id=cred.1144902,
